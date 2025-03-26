@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Hero() {
   return (
     <section
-      className="relative px-5 md:px-0 h-[35rem] md:h-[21rem] lg:h-[37.3rem] after:content-[''] after:inset-0 after:bg-black/60 after:absolute overflow-hidden sec-scroll "
+      className="relative px-5 md:px-0 h-[35rem] md:h-[21rem] lg:h-[37.3rem] after:content-[''] after:inset-0  after:bg-black/75 md:after:bg-black/60 after:absolute overflow-hidden sec-scroll "
       id="inicio"
     >
       <video
@@ -26,7 +27,7 @@ export default function Hero() {
         className="absolute md:hidden inset-0 w-full h-[100%] object-cover -top-5"
       >
         <source
-          src="https://res.cloudinary.com/dy3pthdns/video/upload/q_auto/v1742939305/hero-mobile_x0pk5u.mp4"
+          src="https://res.cloudinary.com/dy3pthdns/video/upload/q_auto/v1742958198/hero-bhmusic_wxiywg.mp4"
           type="video/mp4"
         />
         Tu navegador no soporta videos.
