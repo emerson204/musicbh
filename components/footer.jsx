@@ -48,9 +48,10 @@ export default function Footer() {
           </h3>
           <ul className="list-disc marker:text-red-500 ml-4">
             <li className="mb-2 w-fit md:w-auto mx-auto">
-              contacto@bhmusic.com
+              contacto@bhmusicoficial.com
             </li>
-            <li className="w-fit md:w-auto mx-auto">+52 777 920 0093</li>
+            <li className="mb-2 w-fit md:w-auto mx-auto">+52 622 163 5704</li>
+            <li className="w-fit md:w-auto mx-auto">+1 (602) 820-9609</li>
           </ul>
         </div>
         <div>

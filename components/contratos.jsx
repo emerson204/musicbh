@@ -3,6 +3,7 @@ import Heading from "./heading";
 import { MdEmail } from "react-icons/md";
 import FormularioContacto from "./formularioContacto";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Contratos() {
@@ -33,8 +34,37 @@ export default function Contratos() {
               <div className="bg-[#ea3c3f] w-9 h-9 rounded-full flex items-center justify-center">
                 <MdEmail className="text-2xl" />
               </div>
-              contacto@bhmusic.com
+              contacto@bhmusicoficial.com
             </a>
+
+            <div className="flex items-center gap-2 mb-7">
+              <div className="bg-[#ea3c3f] w-2 md:h-5 h-8" />
+              <p className="montserrat-medium ">
+                Llama o envíanos un mensaje a nuestros números de contacto:
+              </p>
+            </div>
+
+            <div className="flex gap-x-5 gap-y-1 sm:gap-10 flex-wrap">
+              <a
+                href="tel:+526221635704"
+                className="text-white flex items-center gap-2  montserrat-medium mb-7"
+              >
+                <div className="bg-[#ea3c3f] w-9 h-9 rounded-full flex items-center justify-center">
+                  <FaPhoneAlt className="text-xl" />
+                </div>
+                +52 622 163 5704
+              </a>
+              <a
+                href="tel:+16028209609"
+                className="text-white flex items-center gap-2  montserrat-medium mb-7"
+              >
+                <div className="bg-[#ea3c3f] w-9 h-9 rounded-full flex items-center justify-center">
+                  <FaPhoneAlt className="text-xl" />
+                </div>
+                +1 (602) 820-9609
+              </a>
+            </div>
+
             <div className="flex items-center gap-2 mb-7">
               <div className="bg-[#ea3c3f] w-2 md:h-5 h-8" />
               <p className="montserrat-medium ">
@@ -43,10 +73,10 @@ export default function Contratos() {
             </div>
             <div className="flex flex-col gap-4 md:flex-row md:gap-3 items-center">
               <a
-                href="https://api.whatsapp.com/send?phone=527779200093"
+                href="https://api.whatsapp.com/send?phone=526221635704"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#3ddc59]  w-full md:w-fit flex items-center gap-2 px-7 py-3 rounded-full justify-center"
+                className="bg-[#3ddc59] w-full md:w-fit flex items-center gap-2 px-7 py-3 rounded-full justify-center"
               >
                 <FaWhatsapp className="text-2xl" />
                 <p className="text-lg montserrat-medium">WhatsApp</p>

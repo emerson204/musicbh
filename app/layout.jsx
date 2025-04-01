@@ -31,6 +31,10 @@ export const metadata = {
   title: "B&H Music",
   description:
     "Explora B&H Music, tu destino para la mejor música y experiencia sonora. Descubre nuevas tendencias, artistas y contenido exclusivo.",
+  icons: {
+    icon: ["/favicon.ico?v=4"],
+    apple: ["/apple-touch-icon.png?=4"],
+  },
 };
 
 export default function RootLayout({ children }) {

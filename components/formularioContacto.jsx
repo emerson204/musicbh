@@ -146,7 +146,7 @@ export default function FormularioContacto() {
                     {...field}
                     autoComplete="off"
                     placeholder="Opcional"
-                    className="min-h-[6.25rem] resize-none overflow-hidden"
+                    className="min-h-[8rem] resize-none overflow-hidden"
                   />
                 </FormControl>
               </FormItem>
