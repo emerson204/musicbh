@@ -82,7 +82,7 @@ export default function Contratos() {
                 <p className="text-lg montserrat-medium">WhatsApp</p>
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/sello_discografico_bh_music/profilecard/?igsh=MXY1YWh0cnpocGJldg=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]  w-full md:w-fit flex items-center gap-2 px-7 py-3 rounded-full justify-center"

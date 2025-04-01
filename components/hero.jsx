@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import { dataRedes } from "@/data/dataRedes";
 
 export default function Hero() {
   return (
@@ -45,6 +45,18 @@ export default function Hero() {
           disquera independiente enfocada en descubrir, desarrollar y proyectar
           artistas con potencial real.
         </p>
+
+        <div className="md:hidden flex items-center gap-4 mt-5">
+          {dataRedes.map((red) => (
+            <a
+              href={red.url}
+              key={red.id}
+              className="bg-white w-8 h-8 text-base text-[#ea3c3f] rounded-full flex items-center justify-center "
+            >
+              {red.icono}
+            </a>
+          ))}
+        </div>
       </div>
     </section>
   );

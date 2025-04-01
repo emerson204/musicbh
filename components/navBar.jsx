@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import { dataRedes } from "@/data/dataRedes";
 
 export default function Navbar({ open, handleClose }) {
   return (
@@ -35,6 +36,18 @@ export default function Navbar({ open, handleClose }) {
             {link.nombre}
           </Link>
         ))}
+
+        <div className="md:hidden flex items-center gap-4 pl-5 mt-8">
+          {dataRedes.map((red) => (
+            <a
+              href={red.url}
+              key={red.id}
+              className="bg-white w-8 h-8 text-base text-[#ea3c3f] rounded-full flex items-center justify-center "
+            >
+              {red.icono}
+            </a>
+          ))}
+        </div>
       </nav>
     </div>
   );

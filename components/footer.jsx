@@ -18,7 +18,7 @@ export default function Footer() {
             El ritmo del futuro comienza aquí. Talento, pasión y éxito en cada
             nota.
           </p>
-          <div className="hidden md:flex items-center gap-3 mt-3 md:mr-12 lg:mr-24 ">
+          <div className="flex items-center gap-3 mt-3 md:mr-12 lg:mr-24 mb-5 md:mb-0">
             {dataRedes.map((red) => (
               <a
                 href={red.url}
