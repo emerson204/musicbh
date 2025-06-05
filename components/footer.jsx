@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="text-white text-center mt-20 py-4 bg-black text-sm md:text-[0.9375rem] px-5">
-        Copyright ©2025 H&B Music. Todos los derechos reservados
+        Copyright ©2024 H&B Music. Todos los derechos reservados
       </p>
     </footer>
   );
