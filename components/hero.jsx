@@ -1,5 +1,6 @@
 import React from "react";
 import { dataRedes } from "@/data/dataRedes";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -57,6 +58,13 @@ export default function Hero() {
             </a>
           ))}
         </div>
+
+        <Link
+          className="bg-[#ea3c3f] text-white py-3 px-6 mt-5 rounded-full montserrat-semibold"
+          href="/experience"
+        >
+          B&H EXPERIENCE
+        </Link>
       </div>
     </section>
   );
