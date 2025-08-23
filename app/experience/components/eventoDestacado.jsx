@@ -12,13 +12,13 @@ export default function EventoDestacado() {
           Coca-Cola Fest – Vive el evento desde el corazón del backstage.
         </p>
       </div>
-      <div className="h-[50rem] bg-[url('/video_youtube.webp')] bg-cover bg-center bg-no-repeat flex items-center justify-center">
+      <div className="h-[25rem] md:h-[50rem] bg-[url('/video_youtube.webp')] bg-cover bg-center bg-no-repeat flex items-center justify-center">
         <a
           href="https://www.youtube.com/watch?v=Zv9FzvM7rNQ&t=1s"
           target="_blank"
-          className="bg-white w-24 h-24 rounded-full flex justify-center items-center hover:scale-110 transition-transform duration-300 cursor-pointer"
+          className="bg-white w-18 h-18 md:w-24 md:h-24 rounded-full flex justify-center items-center hover:scale-110 transition-transform duration-300 cursor-pointer"
         >
-          <FaPlay className="text-5xl text-red-600 ml-2" />
+          <FaPlay className="text-4xl md:text-5xl text-red-600 ml-2" />
         </a>
       </div>
     </section>
