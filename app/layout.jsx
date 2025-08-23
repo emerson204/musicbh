@@ -27,6 +27,12 @@ const montserratExtraBold = localFont({
   display: "swap",
 });
 
+const bowlbyOne = localFont({
+  src: "./fonts/BowlbyOne-Regular.woff2",
+  variable: "--font-bowlby-one",
+  display: "swap",
+});
+
 export const metadata = {
   title: "B&H Music",
   description:
@@ -41,7 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${montserratRegular.variable} ${montserratMedium.variable} ${montserratSemibold.variable} ${montserratExtraBold.variable} antialiased`}
+        className={`${montserratRegular.variable} ${montserratMedium.variable} ${montserratSemibold.variable} ${montserratExtraBold.variable} ${bowlbyOne.variable} antialiased`}
       >
         {children}
         <Toaster />
