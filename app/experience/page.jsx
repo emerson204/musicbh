@@ -18,9 +18,7 @@ export default function Experience() {
           Inicio
         </Link>
       </div>
-
       <Main />
-
       <Footer />
     </>
   );
