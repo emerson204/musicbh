@@ -1,7 +1,37 @@
-import React from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import { FaMusic, FaCommentDots } from "react-icons/fa";
 
 export default function Perreo() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (videoRef.current) {
+            if (entry.isIntersecting) {
+              videoRef.current.play(); // ▶️ Se reproduce cuando entra a la vista
+            } else {
+              videoRef.current.pause(); // ⏸️ Se pausa cuando sale de la vista
+            }
+          }
+        });
+      },
+      { threshold: 0.4 } // 0.4 = el 40% del video debe estar visible
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section className="pb-9 md:pb-14 lg:pb-20 ">
       <div className="px-4 max-w-[75rem] mx-auto">
@@ -46,7 +76,11 @@ export default function Perreo() {
             </p>
           </div>
 
-          <video className="w-[18rem] md:w-[25rem] mx-auto" controls>
+          <video
+            ref={videoRef}
+            className="w-[18rem] md:w-[25rem] mx-auto"
+            playsInline
+          >
             <source src="/video-cocacolabh.mp4" type="video/mp4" />
             Tu navegador no soporta videos.
           </video>
