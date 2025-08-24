@@ -47,7 +47,7 @@ export default function Perreo() {
           </div>
 
           <video className="w-[18rem] md:w-[25rem] mx-auto" controls>
-            <source src="/video_bhcoca.mp4" type="video/mp4" />
+            <source src="/video-cocacolabh.mp4" type="video/mp4" />
             Tu navegador no soporta videos.
           </video>
         </div>
