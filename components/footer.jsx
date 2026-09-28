@@ -50,8 +50,7 @@ export default function Footer() {
             <li className="mb-2 w-fit md:w-auto mx-auto">
               contacto@bhmusicoficial.com
             </li>
-            <li className="mb-2 w-fit md:w-auto mx-auto">+52 622 163 5704</li>
-            <li className="w-fit md:w-auto mx-auto">+1 (602) 820-9609</li>
+            <li className="mb-2 w-fit md:w-auto mx-auto">+52 777 920 0093</li>
           </ul>
         </div>
         <div>
